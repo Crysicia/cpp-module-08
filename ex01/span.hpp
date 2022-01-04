@@ -1,6 +1,7 @@
 #ifndef SPAN_HPP
 #define SPAN_HPP
 #include <string>
+#include <vector>
 
 class Span {
 public:
@@ -28,7 +29,7 @@ public:
 	};
 
 private:
-	int* m_array;
+	std::vector<int> m_array;
 	unsigned int m_capacity;
 	unsigned int m_stored;
 };
