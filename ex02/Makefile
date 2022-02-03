@@ -1,10 +1,9 @@
 CXXFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
-NAME	= span
+NAME	= mutantstack.out
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f
-SRCS	= main.cpp \
-		  mutantstack.cpp
+SRCS	= main.cpp
 
 all: $(NAME)
 
@@ -21,3 +20,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean $(NAME)
+
+.PHONY: all clean fclean re
