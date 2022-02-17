@@ -1,6 +1,6 @@
 CXXFLAGS	= -std=c++98 -pedantic -Wall -Werror -Wextra
 CXX		= c++
-NAME	= mutantstack.out
+NAME	= mutantstack
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f
 SRCS	= main.cpp
